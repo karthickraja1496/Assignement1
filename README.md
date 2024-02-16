@@ -52,6 +52,7 @@ import streamlit as st
 
 a) Extract data
 Extract the particular youtube channel data by using the youtube channel id, with the help of the youtube API developer console.
+
 b) Load data
 Data is stored in the MongoDB database, also It has the option to migrate the data to MySQL database from the MongoDB database.
 
