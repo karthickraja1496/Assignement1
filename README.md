@@ -50,11 +50,22 @@ import streamlit as st
 
 **E T L Process**
 
-a) Extract data
-Extract the particular youtube channel data by using the youtube channel id, with the help of the youtube API developer console.
+Retrieving data from the YouTube API
 
-b) Load data
-Data is stored in the MongoDB database, also It has the option to migrate the data to MySQL database from the MongoDB database.
+The project utilizes the Google API to retrieve comprehensive data from YouTube channels. The data includes information on channels, playlists, videos, and comments. By interacting with the Google API, we collect the data and merge it into a JSON file.
 
+Storing data in MongoDB
 
+The retrieved data is stored in a MongoDB database based on user authorization. If the data already exists in the database, it can be overwritten with user consent. This storage process ensures efficient data management and preservation, allowing for seamless handling of the collected data.
 
+Migrating data to a SQL data warehouse
+
+The application allows users to migrate data from MongoDB to a SQL data warehouse. Users can choose which channel's data to migrate. To ensure compatibility with a structured format, the data is cleansed using the powerful pandas library. Following data cleaning, the information is segregated into separate tables, including channels, playlists, videos, and comments, utilizing SQL queries.
+
+Finally, create a Dashboard by using Streamlit and give dropdown options on the Dashboard to the user and select a question from that menu to analyse the data and show the output in Dataframe Table
+
+Video Link:
+
+the project outcome is shown in the below link
+
+LinkedIn: https://www.linkedin.com/posts/karthickraja1496_datascience-guvi-zenclass-activity-7165721077501874176-4fyG?utm_source=share&utm_medium=member_desktop
